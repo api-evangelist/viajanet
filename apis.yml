@@ -1,7 +1,26 @@
 aid: viajanet
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/viajanet.png
 name: Viajanet
-description: Viajanet is a company surfaced as a portfolio company of redpoint-ventures and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Viajanet is a Brazilian online travel agency (OTA) operated within the Despegar
+  group, selling flights, hotels, vacation packages, car rentals and travel
+  insurance to consumers in Brazil through www.viajanet.com.br. It was surfaced as
+  a portfolio company of Redpoint Ventures and added to the API Evangelist network
+  for enrichment. Viajanet publishes no public developer API, SDK, or developer
+  portal; the enrichment pass captured its live security surface (a published
+  security.txt with a Bugcrowd private bug bounty program run by the Despegar
+  application-security team) and its domain-security posture.
 url: https://raw.githubusercontent.com/api-evangelist/viajanet/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Travel
+- Online Travel Agency
+- Flights
+- Hotels
+- Booking
+- Brazil
+- E-commerce
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +47,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/viajanet-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/viajanet-vulnerability-disclosure.yml
+- type: Security
+  url: security/viajanet-vulnerability-disclosure.yml
+- type: SecurityTxt
+  url: well-known/viajanet-security.txt
+- type: WellKnown
+  url: well-known/viajanet-well-known.yml
 - type: Website
   url: http://www.viajanet.com.br/
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 4
+  pass: local-v1
